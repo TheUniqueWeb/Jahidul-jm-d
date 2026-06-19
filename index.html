@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags: এটি গুগলকে সাহায্য করবে আপনাকে খুঁজে পেতে -->
+    <title>Jahidul jm d - Official APK Download</title>
+    <meta name="description" content="Official website of Jahidul jm d. Download our latest APK file easily.">
+    <meta name="keywords" content="Jahidul jm d, jahiduljmd, jahidul jm d apk, cyber security jm">
+    <meta name="author" content="Cyber Security JM">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .modal { transition: opacity 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center p-4">
+        <div class="text-center bg-gray-800 p-10 rounded-2xl shadow-2xl border border-blue-500">
+            <!-- Title with your keyword -->
+            <h1 class="text-3xl font-bold mb-2">Jahidul jm d</h1>
+            <p class="text-blue-400 font-semibold mb-6 text-xl">Official APK Download Center</p>
+            
+            <p class="text-gray-400 mb-8 text-sm">Nicher button e click kore file ti download korun.</p>
+            
+            <!-- Download Button -->
+            <button id="downloadBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Download Now
+            </button>
+        </div>
+    </main>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-white text-gray-900 p-8 rounded-xl text-center shadow-2xl">
+            <div class="text-green-500 text-5xl mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2">Success!</h2>
+            <p class="text-gray-600 mb-6">Download started by Jahidul jm d</p>
+            <button id="closePopup" class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center border-t border-gray-700">
+        <p class="text-gray-400 font-medium italic">Developed By Cyber Security JM</p>
+    </footer>
+
+    <script>
+        const downloadBtn = document.getElementById('downloadBtn');
+        const successPopup = document.getElementById('successPopup');
+        const closePopup = document.getElementById('closePopup');
+
+        // GitHub APK Link
+        const GITHUB_APK_URL = "https://github.com/USER_NAME/REPO_NAME/releases/download/v1.0/app.apk";
+
+        downloadBtn.addEventListener('click', () => {
+            window.location.href = GITHUB_APK_URL;
+            setTimeout(() => {
+                successPopup.classList.remove('hidden');
+            }, 500);
+        });
+
+        closePopup.addEventListener('click', () => {
+            successPopup.classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>
